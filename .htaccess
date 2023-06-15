@@ -1,0 +1,21 @@
+RewriteEngine On 
+
+ErrorDocument 404 http://localhost/school/404
+
+RewriteRule ^accueil$ office/vues/accueil.php
+
+RewriteRule ^liste-eleve$ office/vues/classList.php
+
+RewriteRule ^info-eleve$ office/vues/infoStudent.php
+
+RewriteRule ^scolarite$ office/vues/scolarite.php
+
+RewriteRule ^comptabilite$ office/vues/comptabilite.php
+
+RewriteRule ^info-staff$ office/vues/infoStaff.php
+
+RewriteRule ^404$ office/error_page.php
+
+
+
+

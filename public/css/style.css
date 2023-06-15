@@ -1,0 +1,333 @@
+/**
+* @header Debut de style 
+*
+*/
+  
+  
+*{ margin:0; padding:0; font-size:large; box-sizing:border-box; font-family: verdana; }
+body{ background-color: rgb(225, 242, 252); }
+header.BarHeader{ width:100%; height:80px; background-color: #22303c;padding: 0 10px; position:fixed; z-index:9000; border-top: 5px solid #8899A6; border-bottom: 5px solid #8899A6; margin-bottom:100px;}
+span.logo{ font-size:xx-large; color:#8899A6; font-weight:bold; padding: 0 10px; line-height: 70px; display: inline-block; align-items: center;}
+input#checker{ display:none;}
+label#boutonMenu{ font-size:xx-large; color:#8899A6; font-weight:bold; line-height:70px; float:right; margin : 0 20px 0 30px; display:none;}
+ul.BoxNav{ float:right; padding:0 10px; margin-right: 20px; }
+li.listeItems{ list-style:none; }
+a.liens{ text-decoration:none; }
+li.navItems{ display:inline-block; margin:0 20px; line-height:70px; }
+a.liensNav{ color:#8899A6; padding: 6px 12px; border: 1.5px solid #8899A6; border-radius: 20px; transition: all 1s; }
+a.liensNav:hover{ color:#22303c; background-color: #8899A6; transition: all 1s; }
+div.espace{ height:20vh; }
+@media (max-width:1000px){
+    span.logo{ font-size: x-large;margin-right: 22px;}
+    ul.BoxNav{ float:right; padding:0 10px; margin-right: 12px; }
+    li.navItems{ display:inline-block; margin:0 12px; line-height:70px; }
+    a.liensNav{ text-transform:none; color:#8899A6; }
+}
+@media(max-width:900px){
+    ul.BoxNav{ position: relative; left:-100%; }
+    label#boutonMenu,label#menu_header{ display:block; cursor: pointer; }
+    input#checker:checked ~ ul.BoxNav{ display:block; width:100%; height:100vh; position:fixed; background-color:#8899A6; left:0; transition: all 2s; text-align: center; padding-top: 30px ;}
+    li.navItems{ display:block; margin:0 12px; line-height:80px; }
+    a.liensNav{ text-transform:uppercase ; color:#8899A6;padding: 8px 16px ; border-radius:10px; background-color: #22303c; }
+}
+
+
+
+
+
+footer.BarFooter{
+    display:flex; flex-direction:column; width:100%; font-size: large;
+}
+div.foorter_down{
+    background-color: #192734; padding:30px; display:flex; flex-direction: column; 
+}
+p.footer_text{
+    color:white; width:100%; text-align: center; 
+}
+p.text_down_1{
+    font-size: x-large;
+}
+p.text_down_2{
+     font-size: small; margin-top: 20px;
+}
+
+@media (max-width:700px){
+    div.footer_up{
+        display: flex; flex-direction: column; gap: 10px 0; align-items: center; padding:30px;
+    }
+}
+
+
+/**
+* @Connexion Debut de style 
+*
+*/
+
+
+body.page_conx{ background-color: rgb(235, 235, 235); margin: 0 auto; display: flex; align-items: center; justify-content: center; padding: 8vh;}
+div.blog_conx{ display: flex; width: 350px; flex-direction: column; align-items: center; justify-content: center; padding: 2% 4%; background-color: rgb(253, 253,253); border-radius: 20px; box-shadow: 0 0 4px gray; border: 1px solid #8899A6; }
+form.form_conx{ width:100%; }
+div.box_conx{ display: flex; flex-direction: column; gap:15px; align-items: center; justify-content: center; width:100%}
+div.input_conx{ display: flex; flex-direction: column; gap:20px; width:100%; margin-bottom: 20px; align-items: center; justify-content: center; padding: 5px; }
+div.input_conx div.box_input{ display: flex; align-items: center; justify-content: center; border: 1px solid rgb(220, 220,220); border-radius: 10px; padding: 5px 10px;}
+div.box_input img{width: 15px; height: 15px;}
+div.box_input input{ padding: 8px;  color:gray; font-size: medium; outline: none; border:none;} 
+input#btn_conx{ width:100%; outline: none; border: none; cursor: pointer; background-color: #8899A6; color:white; box-shadow: 0 0 2px gray; font-size: large; border-radius: 10px; padding: 10px 0;  }
+h1#titre_conx{color:white; text-shadow: 0 0 4px black; font-size: 30px;}  
+a#pwd_forget{ text-decoration: none; color:gray; font-size: small; margin-bottom: 10px; margin-bottom: 20px; }
+img#logo_conx{ border-radius: 50%; border: 10px solid rgb(235, 235, 235); padding: 10px; margin-bottom: 5px; }
+span.notification_conx{ color: brown; font-size: small; text-align: center; margin-bottom: 10px; }
+
+
+
+
+/**
+* @Accueil Debut de style 
+*
+*/
+
+section.page_accueil{ padding: 0 4%;  display: flex; align-items: center; justify-content: center; flex-direction: column;}
+a.btn_classe{ text-decoration: none; width:100%; display: flex;}
+   div.box_classe{ display: flex; gap:10px; flex-direction: column; align-items: center; justify-content: center; padding: 20px; width: 100%; background-color: rgb(240, 251, 255); box-shadow: 0 0 6px gray; border-radius: 10px; }
+   div.option_classe{ display: flex; align-items: center; justify-content: center; gap:5px}
+   span.titre_classe{ font-size: 40px; font-weight: bold;  color: black; width:100%; text-align: center; border-radius: 10px;  }
+   span.nbr_eleve{ font-size: 60px; font-weight: bold; color: #8899A6; padding: 10px; border-radius: 50%; border: 2px solid #8899A6; }
+   img.logo_eleve{ color:gray }
+   img#slogan_accueil{text-align: center;}
+   div.blog_accueil{ display: flex;  flex-direction: column; align-items: center; justify-content: center; width:100%; }
+   fieldset.box_accueil{ display: flex; justify-content: center; margin-bottom: 20px; align-items: center; gap: 0 20px; width:100%; padding:4%; border: 1px solid rgb(200, 200, 200); }
+   legend#titre_box_accueil{ padding: 15px 30px; color: white; font-size: medium; font-weight: bold; background-color: #8899A6;box-shadow: 0 0 2px gray; border-radius: 10px; border: 2px solid #8899A6; text-align: right; }
+
+
+/**
+* @classList Debut de style 
+*
+*/
+
+section.page_classList{ padding: 0 4%; }
+div.blog_classList{ display: flex; flex-direction: column; align-items: center; justify-content: center; gap:50px; width:100%; margin-bottom: 100px;}
+div.head_page_clasList{ display: flex; justify-content: center; align-items: center; gap:20px; padding: 20px; background-color: white; box-shadow: 0 0 6px gray; border-radius: 10px; width: 100%;}
+div.head_page_clasList span{ font-size: 30px; color: #8899A6; font-weight: bold;}
+div.box_logo_classList img#second_logo{ transform:rotateY(180deg); }
+div.box_logo_classList{ display: flex; align-items: center; justify-content: center; gap:10px; }
+img.logo_etoile{ width:25px; height:25px; }
+div.blog_list{display: flex; flex-direction: column; align-items: center; justify-content: center; gap:20px; width:100%;}
+div.liste_demande{ display:flex; align-items: center; width:100%; gap:20px; padding: 5px 10px;  box-shadow: 0 0 4px gray; background-color: white; }
+div.liste_demande:nth-child(2n){ background-color: rgb(235, 235, 235); }
+div.liste_demande:hover{ border:1px solid gray; }
+div.option{ font-size: large; color:gray; text-align: center; width:100%;}
+div.etoile,div.update{ width: 100%;}
+div.paiement{ display:flex; justify-content: center; align-items: center; gap:20px}
+img.btn_mesualite{ width: 40px; height: 40px;}
+@media screen and (max-width:800px) {
+    div.liste_demande{ display: flex; flex-direction: column; align-items: center; justify-content: center; gap:10px;}
+}
+
+
+
+/**
+* @infostudent Debut de style 
+*
+*/
+
+
+section.page_infoStudent{padding: 0 4%;}
+div.blog_infoStudent{ display: flex; justify-content: center; gap:100px; width: 100%; margin-bottom: 100px; }
+div.box_left_infoStudent{ display: flex; flex-direction: column; align-items: center;  border-radius: 20px; gap:50px; width:70%; background-color: rgb(248, 248, 248); padding: 4%; box-shadow: 0  0 2px gray; }
+table.mensualite{ width: 100%;}
+tr{border-collapse: collapse; }
+tr.tableHead th, tr.tableLine td { border-collapse: collapse; padding: 10px; text-align: center;  }
+tr.tableLine td{ font-size: medium; }
+tr.tableHead{ background-color: #067aab; color:white; font-size: medium;}
+tr.tableLine{ background-color: white;}
+tr.tableLine:nth-child(2n){background-color: #cff1ff;}
+div.box_Paiement{ display: flex; padding: 20px; border: 1px outset rgb(235, 235, 235); width: 100%; }
+span.btn_modale{ padding: 4px 20px; background-color: #067aab; color: white; font-size: large; cursor: pointer; text-align: center; box-shadow: 0 0 2px gray; border-radius: 5px; display: flex; align-items: center; justify-content: center; }
+hr{border: 1px solid gray; width:100%}
+div.box_right_infoStudent{ width: 30%;border: 1px solid rgb(235, 235, 235); border-radius: 20px; display: flex; flex-direction: column; gap:30px; }
+div.top_info{ display: flex; width: 100%; flex-direction: column; gap:10px; padding: 20px 0; background-color: rgb(248, 248, 248); box-shadow: 0 0 2px gray; border-radius: 10px; align-items: center; justify-content: center;}
+div.top_info img{ width: 100px; height: 100px }
+div.top_info span{ font-size: medium; color: gray;}
+summary{  border: 1px solid rgb(200, 200, 200); padding: 10px; color: gray; border-radius: 30px; cursor:pointer;}
+div.box_add_note{width:100%; margin-top: 20px; padding: 5px; }
+div.box_add_note form{ display: flex; flex-direction: column; width: 100%; justify-content: center; gap:10px }
+div.box_add_note form input, select{ padding: 10px; border-radius: 10px; border: 1px solid rgb(200, 200, 200); outline: none; color: gray; }
+div.box_add_note form input[type='text']{ margin-bottom: 20px; }
+div.box_add_note form input[type='submit']{ margin-bottom: 20px; background-color: rgb(235, 235, 235); cursor: pointer;}
+div.down_info{ display: flex; flex-direction: column; align-items: center; justify-content: center; gap:10px; border: 1px solid rgb(200, 200, 200); border-radius: 10px; background-color: rgb(248, 248, 248); padding: 20px 10px;}
+div.down_info span{ font-size: medium; color: gray; }
+div.blog_modale{ position: fixed; width:100%; height: 100vh; background-color: rgba(0, 0, 0, 0.5);  padding:3% 10%; z-index:1000; top:0; left:0; display: none;}
+div.popup{ background-color: white; box-shadow: 0 0 2px gray; border-radius: 10px; padding: 20px 40px; width: 400px; display: flex; flex-direction: column; gap: 20px; align-items: center; margin: 15vh auto; }
+div.popup div.input{display:flex; gap: 10px; width: 100%; flex-direction: column; gap: 5px;}
+div.popup span{ font-size: xx-large; font-weight: bold; color: white; text-shadow: 0 0 10px black; }
+div.popup input{ padding: 10px; border-radius: 10px; border: 1px solid rgb(200, 200, 200); outline: none; width: 100%; }
+div.popup input[type=submit]{ cursor: pointer; color: white; font-size: large; background-color:#067aab ; margin-top: 20px; }
+div.popup form{  display: flex; flex-direction: column; gap: 20px; align-items: center; width: 100%; margin-top: 20px; }
+div.popup form label{ font-size: medium; color: gray; }
+span#btn_close_popup{ padding: 5px; background-color: brown; cursor: pointer; font-weight: bold; color: white; font-size: medium; border-radius: 50%; position: fixed; right: 80vh; }
+
+span.btn_PaiementStaff{  background-color: #506679; }
+tr.tableHeadStaff{ background-color: #506679; }
+tr.tableLineStaff:nth-child(2n){background-color: rgb(225, 242, 252);}
+
+
+
+/**
+* @Scolarite Debut de style 
+*
+*/
+
+
+section.page_scolarite{ padding: 0 4%; }
+div.blog_scolarite{ display: flex; flex-direction: column ; align-items: center; justify-content: center; width:100%; gap:40px }
+div.box_top_scolarite{ display: flex; gap:50px; align-items: center; justify-content: center; width: 100%;}
+
+/* STYLE BOX TOP PARTIE LEFT */
+div.box_top_scolarite div.left{width: 70%; display: flex; background-color: white; flex-direction: column; align-items: center; justify-content: center; gap:50px; border: 1px solid rgb(220, 220, 220); border-radius: 5px; padding:2%; }
+div.box_top_scolarite div.box_static{ display: flex; align-items: center; justify-content: center; width: 100%; gap:20px; }
+div.box_top_scolarite div.box_static div.box{ display: flex; justify-content: center; align-items: center; background-color: rgb(235, 235, 235);  gap:20px; box-shadow: 0 0 2px gray; padding: 10px 0; width: 100%; }
+div.box_top_scolarite div.box_static div.box b{ font-size: xx-large; }
+
+/* STYLE BOX TOP PARTIE RIGHT */
+div.box_top_scolarite div.right{width: 30%;}
+div.top_info{ display: flex; width: 100%; flex-direction: column; gap:10px; padding: 20px 0; background-color: rgb(248, 248, 248); box-shadow: 0 0 2px gray; border-radius: 10px; align-items: center; justify-content: center;}
+div.top_info img{ width: 100px; height: 100px }
+div.top_info div#btn_add_admin{ display:flex;  align-items: center; justify-content: center; gap:10px; font-size: medium; color: gray; padding: 8px 15%; border-radius: 20px; border: 1px solid rgb(200, 200, 200); cursor: pointer; }
+div.top_info div#btn_add_admin img{ width:30px; height:30px;}
+div.top_info div#btn_add_admin:hover{ background-color: rgb(235,235,235); box-shadow: 0 0 2px gray; }
+div.blog_add_admin{ display: flex; justify-content: center; align-items: center; gap:20px; width:100%; }
+div.blog_add_admin div.imagetoPersonnel{ width: 40%; display: flex; align-items: center; justify-content: center; }
+div.blog_add_admin div.imagetoPersonnel img{ width: 450px; height: 450px;  }
+
+/* STYLE BOX DOWN */
+div.box_down_scolarite{ width: 100%; border: 1px solid rgb(220, 220, 220); background-color: white; padding: 20px; margin-bottom: 100px; }
+
+/* STYLE PAGE CATEGORIE DE L'ADMIN */
+div.pageCategories{ display: block}
+ul.navBarCategories{ background-color: white; border-bottom: 1px solid rgb(220, 220, 220); position: relative; z-index: 90;}
+ul.navBarCategories li{ display:inline-block; list-style:none; padding:6px 20px; text-align: left; cursor: pointer; font-size: large; font-weight: bold; color: White;  border-radius: 5px;}
+ul.navBarCategories li b{font-size: xx-large;}  
+ul.navBarCategories li#btn_option1{ border-bottom: 4px solid brown; background-color: #ffc107; box-shadow:  0 0 2px gray; }
+ul.navBarCategories li#btn_option2{ background-color: #17A2B4; box-shadow:  0 0 2px gray; }
+ul.navBarCategories li#btn_option3{ background-color: #28a745; box-shadow:  0 0 2px gray; }
+ul.navBarCategories li#btn_option4{ background-color: #007bff; box-shadow:  0 0 2px gray; }
+ul.navBarCategories #categorie_check , #menu_categorie{ display: none; font-size: x-large; font-weight: bold; }
+div.categoriesFrame{ padding: 2% 4%; display: block; overflow-y: hidden;}
+div.categoriesFrame div{ position: relative; }
+div.categorie_Items{ width:100%;}
+div.option1{ display: block; justify-content: center; align-items: center;}
+div.option2{ display: none; justify-content: center; align-items: center;}
+div.option3{display:none; justify-content: center; align-items: center;}
+div.option4{display:none; justify-content: center; align-items: center;}
+
+/* STYLE DES BLOG D'INSCRIPTIONS */
+div.blog_inscription{ display: flex; flex-direction: row-reverse; gap:20px; justify-content: center; align-items: center; width: 100%; }
+div.form_inscription{display: flex; width: 60%; justify-content: center; align-items: center; }
+div.form_inscription form{ display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px;}
+div.form_inscription form fieldset{ padding: 20px 10px; border:1px solid rgb(200, 200, 200); width: 100%; border-radius: 10px; background-color: rgb(235,235,235)}
+div.form_inscription form fieldset legend{ color: gray; font-size: medium; font-weight: bold; text-align: center; padding: 10px; border: 1px solid rgb(200,200,200); background-color: white;}
+div.form_inscription form fieldset div.box_input{display: flex; justify-content: center; align-items: center; width: 100%; gap:0 15px;}
+div.form_inscription form fieldset div.box_input input,select{ padding: 10px; border:1px solid rgb(200, 200, 200); outline: none; border-radius: 20px; width: 100%; color: gray; } 
+div.form_inscription form input[type=submit]{ padding: 10px 30%; background-color: rgb(235, 235, 235); box-shadow: 0 0 2px gray; border: 1px solid rgb(220, 220, 220); outline: none; cursor: pointer; margin-top: 30px; border-radius: 10px; color: gray; font-weight: bold;  }
+div.blog_inscription div.image{ width: 40%; display: flex; align-items: center; justify-content: center; }
+div.blog_inscription div.image img{ width:450px; height:auto; }
+
+/* STYLE DE LA BLOG DEPENSE */
+div.blog_depenses{ width: 100%; display: flex; align-items: center; justify-content: center; padding:2%; } 
+div.blog_depenses form{ display: flex; flex-direction: column; justify-content: center; align-items: center; gap:20px; width: 100%; }
+div.blog_depenses form label {color:gray; }
+div.blog_depenses form input[type=text]{ border: 1px solid rgb(200, 200, 200); outline: none; padding: 20px; border-radius: 20px; width: 400px; color:gray;}
+div.blog_depenses form input[type=submit]{ cursor: pointer; border: 1px solid rgb(200, 200, 200); outline: none; padding: 15px; border-radius: 20px; width: 400px; box-shadow: 0 0 2px gray; background-color: rgb(235, 235, 235); color: gray; }
+div.blog_depenses textarea{  border: 1px solid rgb(200, 200, 200); outline: none; padding: 10px; border-radius: 20px; color: gray; }
+div.blog_depenses div.imagetoDepense{ width: 100%; display: flex; align-items: center; justify-content: center; }
+div.blog_depenses div.imagetoDepense img{ width: 100%; height: auto; }
+
+/* STYLE DU POPUP */
+div.popup_scolarite{ background-color: white; box-shadow: 0 0 2px gray; border-radius: 10px; padding: 20px 40px; width: 600px; display: flex; flex-direction: column; gap: 20px; align-items: center; margin: 50px auto; }
+div.popup_scolarite form{ display: flex; justify-content: center; flex-direction: column; align-items: center; gap: 20px; }
+div.popup_scolarite div.box_input{ display:flex; gap: 10px; width: 100%; align-items: center; text-align: center; }
+div.popup_scolarite div.box_input input, select{ padding: 10px; border-radius: 20px; border: 1px solid rgb(200, 200, 200); color: gray; width: 100%; }
+div.popup_scolarite form input[type=submit]{ background-color: #17A2B4; font-weight: bold; cursor: pointer; margin-top: 20px; padding: 15px 20%; border: 1px solid rgb(220, 220, 220); outline: none; border-radius: 20px; box-shadow: 0 0 2px gray; color:white; font-weight: bold;}
+div.popup_scolarite span{ color:white; text-shadow: 0 0 6px black; font-size:xx-large; font-weight:bold; margin-bottom:10px;}
+span#btn_close_popup_scolar{padding:5px; background-color:brown; font-size:large; border-radius:50%; position: relative; cursor: pointer; left:40vh; top:4vh;}
+
+/* STYLE RESPONSIVE MENU */
+@media screen and (max-width:1100px) {
+    #menu_categorie{ display: block; margin-bottom: 10px; text-align: center; color: #8899A6; cursor: pointer; }
+    ul.navBarCategories{ display: flex; flex-direction: column; box-shadow: 0 0 1px gray; gap:10px; align-items:center; padding: 2% 4%;}
+    ul.navBarCategories li{ display: none;  width:100%;}
+    input#categorie_check:checked ~ li{ display:block; transition: all 1s; }
+}
+/* STYLE RESPONSIVE BOX DE LA BLOG DOWN */
+@media screen and (max-width:1000px) {
+    div.blog_add_admin, div.blog_depenses, div.blog_inscription { display:flex; flex-direction:column; gap:20px; }
+    div.form_inscription{ width:100%; }
+}
+/* STYLE RESPONSIVE TOP SCOLRITE */
+@media screen and (max-width:700px) {
+    div.box_top_scolarite{ display: flex; flex-direction: column-reverse; gap:30px; align-items: center; justify-content: center; width: 100%;}
+    div.box_top_scolarite div.left{width: 100%;}
+    div.box_top_scolarite div.right{width: 100%;}
+}
+/* STYLE RESPONSIVE TOP SCOLRITE */
+@media screen and (max-width:650px) {
+    div.blog_add_admin div.form_inscription{width:100%;}
+    div.box_input{ display:flex; flex-direction: column; align-items: center; width: 100%;}
+    div.form_inscription{ width:100%; }
+}
+
+
+
+
+/**
+* @Comptabilite Debut de style 
+*
+*/
+ 
+    
+    section.page_comptable{ padding: 2% 4%; }   
+    div.blog_comptable{ display: flex; flex-direction: column; justify-content: center; align-items: center; gap:50px; margin-bottom: 100px; }
+    div.box_comptable{ display: flex; align-items: center; justify-content: space-evenly; gap:20px; padding: 4% 2%; background-color: white; border: 1px solid rgb(220, 220, 220) ;width: 100%; }
+    div.box_comptable_items{ display: flex; justify-content: center; align-items: center; box-shadow: 0 0 2px gray; width:100%; background-color: white; }
+    div.box_comptable_items div.logo{ background-color: #ffc107 ; padding: 2%; display: flex; align-items: center; flex-direction: column;}
+    div.box_comptable_items div.logo img{width: 60px; height: 60px;}
+    div.box_montant_comptable{ display: flex; flex-direction: column; justify-content: center; align-items: center; gap:15px; width: 100%; }
+    div.box_montant_comptable span{ font-size: small; color: gray; font-weight: bold; text-align: center; text-decoration: underline; }
+    div.box_montant_comptable span.montant{ font-size: large; text-decoration: none ;}
+    div.box_graph{  display: flex; align-items: center; justify-content: space-evenly; gap:20px; padding: 4% 2%; background-color: white; border: 1px solid rgb(220, 220, 220) ;width: 100%;  }
+    div.blog_comptable div.box_classe{ width:100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap:30px; padding: 4% 2%; background-color: white; box-shadow: 0 0 4px gray; }
+    
+    
+/**
+* @Pagination Debut de style 
+*
+*/
+
+    div.pagination{ width: 100%; display: flex; align-items: center; justify-content: center; gap:15px; margin-top: 50px; }
+    a.lien_pagination{ text-decoration: none; color:gray; padding: 5px; border: 2px solid rgb(200, 200, 200); border-radius: 50px; }
+    a.lien_pagination:hover{ background-color: rgb(200, 200, 200); color: white; }
+
+
+/**
+* @404 Debut de style 
+*
+*/
+
+    section.page_404{ width: 100%;}
+    div.blog_404{ padding: 4%; background-color: rgba(0,0,0,0.8); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 10vh auto; gap:50px }
+    span.title_404{font-size: 50px; color: rgb(250, 250, 250); font-weight: bold; }
+    div.box_logo_404{display: flex; align-items: center; justify-content: center; gap:20px; }
+    div.box_logo_404 span.logo_404{ font-size: xx-large; font-weight: bold; color: rgb(250, 250, 250);}
+
+
+/**
+* @blog annee en cours (dans comptabilite) Debut de style 
+*
+*/
+ div.blog_scolar_year, div.box_scolar_year{ display: flex; align-items: center; justify-content: center; gap:0 100px; padding: 10px; margin-bottom: 10px; }
+span.btn_display_box{ padding: 10px 50px; width:25%; background-color: #067aab; color: white; font-size: large; font-weight: bold; box-shadow: 0 0 2px gray; border-radius: 20px; text-align: center; cursor: pointer;}
+div.blog_scolar_year form{ width:75%; }
+div.box_scolar_year{ width:100%; box-shadow: 0 0 2px gray; visibility: hidden;}
+div.box_scolar_year input[type=text]{ width:100%; padding: 10px; border: 1px solid rgb(230, 230, 230); outline:none; color:gray; font-size: large;}
+div.box_scolar_year input[type=submit]{ padding: 10px 40px; outline:none; box-shadow: 0 0 3px gray; background-color: rgb(220, 220, 220); border: 1px solid rgb(240, 240, 240); font-size: large; font-weight: bold; color:gray; cursor: pointer; border-radius: 20px; }
+div.toggle_display_box{ visibility: visible; }
